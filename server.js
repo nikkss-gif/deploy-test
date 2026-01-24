@@ -8,6 +8,14 @@ app.get('/health', (req, res) => {
   res.status(200).send('OK');
 });
 
+app.get('/', (req, res) => {
+  res.send(`
+    <h1>Deploy Test App</h1>
+    <p>Status: Running</p>
+    <p>Deployed At: ${new Date().toLocaleString()}</p>
+  `);
+});
+
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 
