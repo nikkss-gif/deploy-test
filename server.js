@@ -10,7 +10,7 @@ app.get('/health', (req, res) => {
 
 app.get('/', (req, res) => {
   res.send(`
-    <h1>Deploy Test App auto dep</h1>
+    <h1>Deploy Test App re test</h1>
     <p>Status: Running</p>
     <p>Deployed At: ${new Date().toLocaleString()}</p>
   `);
@@ -32,3 +32,4 @@ process.on('SIGTERM', () => {
 server.listen(3000, () => {
   console.log('Server running on port 3000');
 });// deploy test change 
+
