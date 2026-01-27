@@ -1,0 +1,18 @@
+name: Local Auto Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Auto deploy on local server
+        shell: cmd
+        run: |
+          cd /d D:\server\app-dev
+          git pull
+          pm2 reload app-dev
