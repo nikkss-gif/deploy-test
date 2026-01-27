@@ -10,7 +10,7 @@ app.get('/health', (req, res) => {
 
 app.get('/', (req, res) => {
   res.send(`
-    <h1>Deploy Test App – Auto Deploy Working 🚀</h1>
+    <h1>Deploy Test App – DEMO LIVE 🚀🔥</h1>
     <p>Status: Running</p>
     <p>Deployed At: ${new Date().toLocaleString()}</p>
   `);
